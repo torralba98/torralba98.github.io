@@ -1,7 +1,9 @@
 var audio = new Audio('assets/sentmessage.mp3');
-var contactString = "<div class='social'> <a target='_blank' href='tel:+918600765857'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'>8600765857</label></div> </a> <a href='mailto:patilvinu777@gmail.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/Vinayak-09'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/918600765857'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://t.me/vinayak_09'> <div class='socialItem'><img class='socialItemI' src='images/telegram.svg' alt=''></div> </a> <a target='_blank' href='https://instagram.com/vinayak_patil_09'> <div class='socialItem'><img class='socialItemI' src='images/instagram.svg' alt=''> </div> </a> <a href='https://www.linkedin.com/in/vinayak-patil-793bb5206/' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='images/linkedin.svg' alt=''></div> </a> </div>";
-var resumeString = "<img src='images/resumeThumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Vinayak Resume.pdf</label></div><a href='assets/Vinayak Patil&#39;s Resume.pdf' download='Vinayak_Patil_Resume.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
-var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.63833262443757!2d74.19014864534314!3d16.865338763272877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1a7dcf40f5dd7%3A0xd7b69fe1fcfa9877!2zMTbCsDUxJzU1LjQiTiA3NMKwMTEnMjUuMyJF!5e0!3m2!1sen!2sin!4v1645079906766!5m2!1sen!2sin' class='map'></iframe></div><label class='add'><address>B2 'Asara'<br>Kodoli<br>Kolhapur, Maharashtra, INDIA 416114</address>";
+
+var contactString = "<div class='social'>  <div class='socialItem' id='call'><img class='socialItemI' src='images/gmail.svg'/><label class='number'>atorralba@isdefe.es<br>a.torralba@udc.es</label></div> </a> <a href='mailto:atorralba@isdefe.es'>  </a> <a target='_blank' href='https://github.com/torralba98'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://instagram.com/torraalba'> <div class='socialItem'><img class='socialItemI' src='images/instagram.svg' alt=''> </div> </a> <a href='https://www.linkedin.com/in/alfonso-torralba/' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='images/linkedin.svg' alt=''></div> </a> </div>";
+
+var resumeString = "<img src='images/resumeThumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>CV_Alfonso_Torralba.pdf</label></div><a href='assets/CV_Alfonso_Torralba.pdf' download='CV_Alfonso_Torralba.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
+
 function startFunction() {
     setLastSeen();
     waitAndResponce("intro");
@@ -10,7 +12,7 @@ function startFunction() {
 function setLastSeen() {
     var date = new Date();
     var lastSeen = document.getElementById("lastseen");
-    lastSeen.innerText = "last seen today at " + date.getHours() + ":" + date.getMinutes()
+    lastSeen.innerText = "últ. vez hoy a las " + date.getHours() + ":" + date.getMinutes()
 }
 
 
@@ -68,48 +70,65 @@ function sendMsg() {
 
 function waitAndResponce(inputText) {
     var lastSeen = document.getElementById("lastseen");
-    lastSeen.innerText = "typing...";
+    lastSeen.innerText = "escribiendo...";
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("Hello there 👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Vinayak Ramchandra Patil</a>.</span><br><br>I am a Computer Engineering student at <span class='bold'>Ch. Shivaji University 👨🏻‍💻📚</span><br><br>I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the engineering sphere.<br><br>Send <span class='bold'>'help'</span> to know more about me.<br>");
+                sendTextMessage("Buenas! 👋🏻,<br><br>Mi nombre es <span class='bold'><a class='alink'>Alfonso Torralba Mantiñán</a></span>, aunque me hago llamar <span class='bold'>xFe80</span> en el mundo de las tecnologías 🤓</span><br><br>Soy graduado en Ingeniería Informática y Máster en Ciberseguridad por la <span class='bold'>Universidad de A Coruña 👨🏻‍💻📚</span><br><br>Envía <span class='bold'>'help'</span> para saber más sobre mí!! :).<br>");
             }, 2000);
             break;
         case "help":
-            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'skills'</span> - to know my skills<br><span class='bold'>'resume'</span> - to get my resume<br><span class='bold'>'education'</span> - to get my education details<br><span class='bold'>'address'</span> - to get my address<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'projects'</span> - to get details of my projects<br><span class='bold'>'clear'</span> - to clear conversation<br><span class='bold'>'about'</span> - to know about this site</span>");
+            sendTextMessage("<span class='sk'>Envía la <span class='bold'>'palabra'</span> correspondiente acerca de lo que quieras saber sobre mí 😝<br><br><span class='bold'>'about'</span> - para conocer más detalles sobre mí<br><span class='bold'>'experiencia'</span> - para conocer mi historial laboral<br><span class='bold'>'estudios'</span> - para conocer mi historial académico<br><span class='bold'>'meritos'</span> - para conocer mis meritos académicos<br><span class='bold'>'idiomas'</span> - para conocer los idiomas que hablo<br><span class='bold'>'colaboraciones'</span> - para conocer las contribuciones que he realizado con entidades<br><span class='bold'>'cursos'</span> - conocer Webinars/cursos a los que asistí<br><span class='bold'>'cv'</span> - para descargar mi CV<br><span class='bold'>'enlaces'</span> - documentos de interés<br><span class='bold'>'contacto'</span> - Para poder hablar conmigo :D<br><span class='bold'>'clear'</span> - para vaciar la conversación<br>");
             break;
-        case "resume":
+        case "cv":
             sendTextMessage(resumeString);
             break;
-        case "skills":
-            sendTextMessage("<span class='sk'>I am currently pursuing B.Tech degree in Computer Science Engineering.<br><br>I can comfortably write code in following languages :<br><span class='bold'>Java<br>C++<br>C<br>PHP<br>Kotlin<br>Dart<br>Python<br>CSS<br>HTML</span><br><br>I've experiance with following frameworks :<span class='bold'><br>Android<br>Flutter<br>ReactJs<br>GTK</span><br><br>I use <span class='bold'>Arch Linux</span> as daily driver on my HP Pavilion 15-ec0xxx<br>OS:Arch Linux<br>DE:Gnome(More often) Kde(often)<br>Favourite IDE:VSCode</span>");
+        case "estudios":
+            sendTextMessage("<span class='bold'>💻 Grado en Ingeniería Informática</span><br>&nbsp;&nbsp&nbsp;&nbsp⭐ Mención en Tecnologías de la Información<br>&nbsp;&nbsp&nbsp;&nbsp📍 Universidad de A Coruña<br>&nbsp;&nbsp&nbsp;&nbsp⌛ 2016 - 2021<br><br>💻 <span class='bold'>Máster Inter-Universitario en Ciberseguridad</span><br>&nbsp;&nbsp&nbsp;&nbsp📍 Universidad de A Coruña<br>&nbsp;&nbsp&nbsp;&nbsp⌛ 2021- 2023<br>");
             break;
 
-        case "education":
-            sendTextMessage("I am currently pusuing B.Tech degree in Computer Science Engineering from TKIET Kolhapur<br>Passing Year : 2023<br><br>I have completed my Diploma from Government Polytechnic Karad<br>Passing Year:2020<br>Result:86.06%<br><br>I have completed my Secondary school from local school known as SWV<br>Passing Year:2016");
+        case "enlaces":
+            sendTextMessage("<span class='bold'>💻 Trabajo Fin de Grado</span><br>&nbsp;&nbsp&nbsp;&nbsp 📄 “Desarrollo de una aplicación web para la gestión fuera de banda de un laboratorio de redes de datos”<br>&nbsp;&nbsp&nbsp;&nbsp⭐ <a class='alink' target='_blank' href='https:\/\/ruc.udc.es/dspace/handle/2183/28657 '><span class='bold'>Enlace</a><br><br><span class='bold'>💻 Trabajo Fin de Máster</span><br>&nbsp;&nbsp&nbsp;&nbsp 📄 “Desarrollo y estudio forense de un ransomware para dispositivos Android 8.1”<br>&nbsp;&nbsp&nbsp;&nbsp⭐ <span class='bold'><span class='alink'>Enlace pendiente...</span></a><br><br><span class='bold'>💻 Trabajo del Grado en Ingeniería Informática</span><br>&nbsp;&nbsp&nbsp;&nbsp 📄 “Gestión de usuarios y grupos en Windows 7 & Active Directory”<br>&nbsp;&nbsp&nbsp;&nbsp⭐ <a class='alink' target='_blank' href='https:\/\/www.dc.fi.udc.es/~afyanez/Docencia/2019/Grado/Trabajos/Win-Users.pdf '>  <span class='bold'>Enlace</a><br>");
             break;
 
-        case "address":
-            sendTextMessage(addressString);
+        case "meritos":
+            sendTextMessage("<span class='bold'>✅ Bachillerato de Ciencias y Tecnología (Biología y Química)</span><br>&nbsp;&nbsp&nbsp;&nbsp⭐ Media global de 9.14 sobre 10<br><br>✅ <span class='bold'>Administración de Infraestructuras y Sistemas Informáticos (asignatura del Grado en Ingeniería Informática)</span><br>&nbsp;&nbsp&nbsp;&nbsp⭐ Calificación de 10.0, recibiendo una Matrícula de Honor<br><br>✅ <span class='bold'>Trabajo Fin de Grado (“Desarrollo de una aplicación web para la gestión fuera de banda de un laboratorio de redes de datos”)</span><br>&nbsp;&nbsp&nbsp;&nbsp⭐ Calificado con 10.0, recibiendo una Matrícula de Honor<br><br>✅ <span class='bold'>Trabajo Fin de Máster (“Desarrollo y estudio forense de un ransomware para dispositivos Android 8.1”)</span> <br>&nbsp;&nbsp&nbsp;&nbsp⭐ Calificado con 9.7, recibiendo una Matrícula de Honor<br>");
             break;
+
+        case "idiomas":
+            sendTextMessage("<span class='bold'>✅ Español </span><br>&nbsp;&nbsp&nbsp;&nbsp🔹 Lengua materna<br><br>✅ <span class='bold'>Gallego</span><br>&nbsp;&nbsp&nbsp;&nbsp🔹 Lengua materna<br><br>✅ <span class='bold'>Inglés</span><br>&nbsp;&nbsp&nbsp;&nbsp🔹 “Programa Bilingüe” cursado durante toda la Educación Secundaria Obligatoria<br>&nbsp;&nbsp&nbsp;&nbsp🔹 <a class='alink'>First Certificate</a> in English (B2) de <a class='alink'>Cambridge</a> Assessment English (2016)<br>&nbsp;&nbsp&nbsp;&nbsp🔹 <a class='alink'>GESE Grade 7</a> (B2.1) de <a class='alink'>Trinity</a> College London (2015)<br>");
+            break;
+
+
+        case "colaboraciones":
+            sendTextMessage("<span class='bold'>🖥️ Desarrollo de retos para el “Capture The Flag” de /* <a class='alink' target='_blank' href='https:\/\/ciberseguridadegalicia.gal/gl/cibergal'><span class='bold'>CIBER.gal</a> */ </span><br>&nbsp;&nbsp&nbsp;&nbsp⏩ Llevado a cabo durante mi estancia en Gradiant. Me encargué sobre todo de implementar los retos de esteganografía.<br><br> <span class='bold'>🖥️ Orador del VI Congreso XoveTIC 2023</span><br>&nbsp;&nbsp&nbsp;&nbsp⏩ En él se trataron diversas comunicaciones orales y pósters dentro del ámbito de las Tecnologías de la Información y las Comunicaciones (TIC). Para mi situación personal, di a conocer un artículo resumen acerca de mi Trabajo Fin de Máster.<br>");
+            break;
+
+        case "experiencia":
+            sendTextMessage("<span class='bold'>🌐 Ingeniería de Sistemas para la Defensa de España S.A. S.M.E. M.P. (ISDEFE)</span><br>&nbsp;&nbsp&nbsp;&nbsp📍 Madrid, España<br>&nbsp;&nbsp&nbsp;&nbsp⌛ sept. 2023 – actualidad<br>&nbsp;&nbsp&nbsp;&nbsp➡️ Trabajamos en colaboración con el CCN para la revisión de productos a incorporar en el CPSTIC.<br><br><span class='bold'>🌐 Gradiant</span><br>&nbsp;&nbsp&nbsp;&nbsp📍 Vigo, España<br>&nbsp;&nbsp&nbsp;&nbsp⌛ sept. 2022 – dic. 2022<br>&nbsp;&nbsp&nbsp;&nbsp➡️ Prácticas Máster en Ciberseguridad. Trabajé con temas de securización de redes 5G. Concretamente en la investigación de mecanismos de gestión de claves de cifrado, diseño de modulo de respuesta a ataques que involucren el robo de material criptográfico y el desarrollo de un prototipo de respuesta basado en la implementación de un proceso de revocación y renovación de claves para la protección de las comunicaciones.<br><br><span class='bold'>🌐 Odeene Ingeniería</span><br>&nbsp;&nbsp&nbsp;&nbsp📍 A Coruña, España<br>&nbsp;&nbsp&nbsp;&nbsp⌛ abr. 2021 – dic. 2021<br>&nbsp;&nbsp&nbsp;&nbsp➡️ Proyecto ABANCA Seguros. Realicé labores de programación en la parte Core del proyecto. A su vez, era el responsable DevOps de todo el proyecto, encargado de coordinar y realizar los pases de código entre los diferentes entornos de Desarrollo, Pre-Explotación y Producción.<br>");
+            break;
+
         case "clear":
             clearChat();
             break;
+
         case "about":
-            sendTextMessage("🛠️💻 This portfolio website is built using HTML, CSS and JavaScript from SCRATCH!<br><br>👨🏻‍💻 Designed and Developed by <a class='alink' target='_blank' href='https:\/\/instagram.com/vinayak_patil_09/'><span class='bold'>Vinayak Patil</a> with ❤️</span>");
+            sendTextMessage("Nacido en <a class='alink'>A Coruña</a> (Galicia) el <a class='alink'>17 de enero de 1998</a>.<br><br>Desde muy pequeño me apasiona el mundo de la <a class='alink'>ciberseguridad</a>, habiendo recibido mi primer ordenador a los 12 años. Mis principales intereses son el <a class='alink'>pentesting</a>, los <a class='alink'>malware</a> y el <a class='alink'>análisis forense</a>. Actualmente desempeño mis labores en <a class='alink'>ISDEFE</a> (Ingeniería de Sistemas para la Defensa de España S.A. S.M.E. M.P.)<br><br>A modo de anécdota, mi primera intrusión la hice a la edad de 13 años. Por aquel entonces, mi padre cuando me castigaba ponía contraseña al ordenador (Windows Vista). Yo, con un par de DVDs y ciertas búsquedas por Internet, conseguí elaborar un disco ejecutable desde la BIOS que quitaba dicha contraseña 🫣🤭<br><br>Me considero una persona organizada y con visión de futuro. No soy conformista, me encanta superarme y aprender día a día. Me encantan los retos!! Es más, tengo pendiente obtener alguna que otra certificación relacionada con la ciberseguridad. Tendréis noticias próximamente sobre esto último 😏<br><br>P.D. Me apasiona el mundo del motor! 🚗<br>");
+
             break;
-        case "contact":
+        case "contacto":
             sendTextMessage(contactString);
             break;
-        case "projects":
-            sendTextMessage("You want to check my projects? Then just jump into my Github Account.<br><br><div class='social'><a target='_blank' href='https://github.com/Vinayak-09'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a></div>");
+
+        case "cursos":
+            sendTextMessage("Me gusta mucho asistir a <span class='bold'> Webinars</span> o <span class='bold'>cursos online</span>, sobre todo aquellos que considere interesantes en relación con la ciberseguridad 🤓<br><br>💻 <span class='bold'><a class='alink'>‟¿Qué es el CPSTIC (CCN-STIC-105) y qué valor aporta?”</a></span><br>&nbsp;&nbsp&nbsp;&nbsp🔎 Sesión liderada por el Departamento de Productos y Tecnologías del CCN (CCN-PYTEC). Se explicó que es el CPSTIC, qué valor aporta, a quién y cómo usarlo<br>");
             break;
         case "new":
             sendTextMessage(addressString);
             break;
         default:
             setTimeout(() => {
-                sendTextMessage("Hey I couldn't catch you...😢<br>Send 'help' to know more about usage.");
+                sendTextMessage("Vaya, no entiendo que me estás pidiendo...😢<br>Envía <a class='bold'>'help'</a> para desglosar las diferentes opciones disponibles.<br>");
             }, 2000);
             break;
     }
