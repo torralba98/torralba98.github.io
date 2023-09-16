@@ -15,7 +15,7 @@ body{
 
 nav{
     display: flex;
-    height: 6%;
+    height: 7%;
     background-color: #202c33;
 }
 
@@ -28,8 +28,8 @@ nav{
 .dpimg{
     cursor: pointer;
     border-radius: 100%;
-    width: 5%;
-    height: 5%;
+    width: 6%;
+    height: 6%;
     height: auto;
     margin: auto 0px;
     margin-left: 10px;
@@ -135,7 +135,7 @@ nav{
     text-align: start;
     width: auto;
     padding: 10px;
-    background-color: #202c33;
+    background-color: #344652;
     border-radius: 0px 15px 15px;
 }
 
@@ -307,7 +307,7 @@ footer{
     color: white;
     text-align: center;
     height: auto;
-    background-color: #202c33;
+    background-color: #202b33;
     text-align: center;
 }
 
@@ -335,7 +335,7 @@ footer{
     height: 100%;
     outline-color: transparent;
     accent-color: transparent;
-    background-color: #2a3942;
+    background-color: #344552;
     outline: none;
     border-color: transparent;
 }
