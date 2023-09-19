@@ -78,7 +78,7 @@ function waitAndResponce(inputText) {
             }, 2000);
             break;
         case "help":
-            sendTextMessage("<span class='sk'>Envía la <span class='bold'>'palabra'</span> correspondiente acerca de lo que quieras saber sobre mí 😇😊<br><br><span class='bold'>'about'</span> - más detalles sobre mí<br><span class='bold'>'experiencia'</span> - historial laboral<br><span class='bold'>'estudios'</span> - historial académico<br><span class='bold'>'meritos'</span> - logros académicos<br><span class='bold'>'idiomas'</span> - lenguas que hablo<br><span class='bold'>'colaboraciones'</span> - contribuciones realizadas con entidades<br><span class='bold'>'cursos'</span> - Webinars/cursos a los que asistí<br><span class='bold'>'cv'</span> - descarga de mi CV<br><span class='bold'>'enlaces'</span> - documentos de interés<br><span class='bold'>'contacto'</span> - comunícate conmigo!! 😋<br><span class='bold'>'clear'</span> - vaciar la conversación<br>");
+            sendTextMessage("<span class='sk'>Envía la <span class='bold'>'palabra'</span> correspondiente acerca de lo que quieras saber sobre mí 😇😊<br><br><span class='bold'>'about'</span> - más detalles sobre mí<br><span class='bold'>'experiencia'</span> - historial laboral<br><span class='bold'>'estudios'</span> - historial académico<br><span class='bold'>'meritos'</span> - logros académicos<br><span class='bold'>'idiomas'</span> - lenguas que hablo<br><span class='bold'>'colaboraciones'</span> - contribuciones realizadas con entidades<br><span class='bold'>'cursos'</span> - Cursos/webinars a los que asistí<br><span class='bold'>'cv'</span> - descarga de mi CV<br><span class='bold'>'enlaces'</span> - documentos de interés<br><span class='bold'>'contacto'</span> - comunícate conmigo!! 😋<br><span class='bold'>'clear'</span> - vaciar la conversación<br>");
             break;
         case "cv":
             sendTextMessage(resumeString);
@@ -121,7 +121,7 @@ function waitAndResponce(inputText) {
             break;
 
         case "cursos":
-            sendTextMessage("Me gusta mucho asistir a <span class='bold'> Webinars</span> o <span class='bold'>cursos online</span>, sobre todo aquellos que considere interesantes en relación con la ciberseguridad 🤓<br><br>💻 <span class='bold'><a class='alink'>‟¿Qué es el CPSTIC (CCN-STIC-105) y qué valor aporta?”</a></span><br>&nbsp;&nbsp&nbsp;&nbsp🔎 Sesión liderada por el Departamento de Productos y Tecnologías del CCN (CCN-PYTEC). Se explicó que es el CPSTIC, qué valor aporta, a quién y cómo usarlo<br>");
+            sendTextMessage("Me gusta mucho asistir a <span class='bold'> Webinars</span> o <span class='bold'>cursos</span>, sobre todo aquellos que considere interesantes en relación con la ciberseguridad 🤓<br><br>💻 <span class='bold'><a class='alink'>‟¿Qué es el CPSTIC (CCN-STIC-105) y qué valor aporta?”</a></span><br>&nbsp;&nbsp&nbsp;&nbsp🔎 Sesión liderada por el Departamento de Productos y Tecnologías del CCN (CCN-PYTEC). Se explicó que es el CPSTIC, qué valor aporta, a quién y cómo usarlo<br>");
             break;
         case "new":
             sendTextMessage(addressString);
