@@ -88,19 +88,25 @@ function waitAndResponce(inputText) {
             break;
 
         case "mensaje":
-            var nombre = "No especificado.";
-            var contacto = "No especificado.";
-            var mensaje = "No especificado.";
+            var nombre = "$";
+            var contacto = "$";
+            var mensaje = "$";
             sendTextMessage("<span class='bold'>¿Cuál es tu nombre?</span>");
-            sleep(5000);
-            var nombre = inputText;
-            sendTextMessage("<span class='bold'>¿Podrías facilitarme algún método de contacto (teléfono, e-mail,...)?</span>");
-            sleep(5000);
-            var contacto = inputText;
-            sendTextMessage("<span class='bold'>¿Qué mensaje quieres mandarme? 😁</span>");
-            sleep(5000);           
-            var mensaje = inputText;
-            sendTextMessage(nombre);
+            while !(nombre == "$"){
+                var nombre = "$";
+                var nombre2 = inputText
+                sendTextMessage("<span class='bold'>¿Podrías facilitarme algún método de contacto (teléfono, e-mail,...)?</span>");
+                while !(contacto == "$"){
+                    var contacto = "$";
+                    var contacto2 = inputText
+                    sendTextMessage("<span class='bold'>¿Qué mensaje quieres mandarme? 😁</span>");
+                    while !(nombre == "$"){     
+                        var mensaje = "$"
+                        var mensaje2 = inputText;
+                        sendTextMessage(nombre2);
+                    }
+                }
+            }
              break;
 
         case "enlaces":
