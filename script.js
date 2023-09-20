@@ -92,15 +92,15 @@ function waitAndResponce(inputText) {
             var contacto = "$";
             var mensaje = "$";
             sendTextMessage("<span class='bold'>¿Cuál es tu nombre?</span>");
-            while !(nombre == "$"){
+            while (nombre !== "$"){
                 var nombre = "$";
                 var nombre2 = inputText
                 sendTextMessage("<span class='bold'>¿Podrías facilitarme algún método de contacto (teléfono, e-mail,...)?</span>");
-                while !(contacto == "$"){
+                while (contacto !== "$"){
                     var contacto = "$";
                     var contacto2 = inputText
                     sendTextMessage("<span class='bold'>¿Qué mensaje quieres mandarme? 😁</span>");
-                    while !(nombre == "$"){     
+                    while (nombre !== "$"){     
                         var mensaje = "$"
                         var mensaje2 = inputText;
                         sendTextMessage(nombre2);
