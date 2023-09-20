@@ -94,12 +94,16 @@ function waitAndResponce(inputText) {
             sendTextMessage("<span class='bold'>¿Cuál es tu nombre?</span>");
             switch (inputText.toLowerCase().trim()) {
                   var nombre = inputText;
+                  sendTextMessage("<span class='bold'>¿Podrías facilitarme algún método de contacto (teléfono, e-mail,...)?</span>");
+                  switch (inputText.toLowerCase().trim()) {
+                         var contacto = inputText;
+                         sendTextMessage("<span class='bold'>¿Qué mensaje quieres mandarme? 😁</span>");
+                         switch (inputText.toLowerCase().trim()) {
+                                var mensaje = inputText;
+                                sendTextMessage(nombre);
+                         }
+                  }
             }
-            sendTextMessage("<span class='bold'>¿Podrías facilitarme algún método de contacto (teléfono, e-mail,...)?</span>");
-            var contacto = inputText;
-            sendTextMessage("<span class='bold'>¿Qué mensaje quieres mandarme? 😁</span>");
-            var mensaje = inputText;
-            sendTextMessage(nombre);
             break;
 
         case "mensaje":
