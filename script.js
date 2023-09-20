@@ -92,21 +92,21 @@ function waitAndResponce(inputText) {
             var contacto = "No especificado.";
             var mensaje = "No especificado.";
             sendTextMessage("<span class='bold'>¿Cuál es tu nombre?</span>");
-            switch (inputText.toLowerCase().trim()) {
+            switch (inputText) {
                   var nombre = inputText;
                   sendTextMessage("<span class='bold'>¿Podrías facilitarme algún método de contacto (teléfono, e-mail,...)?</span>");
-                  switch (inputText.toLowerCase().trim()) {
+                  switch (inputText) {
                          var contacto = inputText;
                          sendTextMessage("<span class='bold'>¿Qué mensaje quieres mandarme? 😁</span>");
-                         switch (inputText.toLowerCase().trim()) {
+                         switch (inputText) {
                                 var mensaje = inputText;
                                 sendTextMessage(nombre);
                          }
                   }
-            }
-            break;
+             }
+             break;
 
-        case "mensaje":
+        case "":
         sendTextMessage("<span class='bold'>💻 Trabajo Fin de Grado</span><br>&nbsp;&nbsp&nbsp;&nbsp 📄 “Desarrollo de una aplicación web para la gestión fuera de banda de un laboratorio de redes de datos”<br>&nbsp;&nbsp&nbsp;&nbsp⭐ <a class='alink' target='_blank' href='https:\/\/ruc.udc.es/dspace/handle/2183/28657 '><span class='bold'>Enlace</a><br><br><span class='bold'>💻 Trabajo Fin de Máster</span><br>&nbsp;&nbsp&nbsp;&nbsp 📄 “Desarrollo y estudio forense de un ransomware para dispositivos Android 8.1”<br>&nbsp;&nbsp&nbsp;&nbsp⭐ <span class='bold'><span class='alink'>Enlace pendiente...</span></a><br><br><span class='bold'>💻 Trabajo del Grado en Ingeniería Informática</span><br>&nbsp;&nbsp&nbsp;&nbsp 📄 “Gestión de usuarios y grupos en Windows 7 & Active Directory”<br>&nbsp;&nbsp&nbsp;&nbsp⭐ <a class='alink' target='_blank' href='https:\/\/www.dc.fi.udc.es/~afyanez/Docencia/2019/Grado/Trabajos/Win-Users.pdf '>  <span class='bold'>Enlace</a><br>");
         break;
 
