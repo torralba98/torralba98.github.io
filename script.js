@@ -78,7 +78,7 @@ function waitAndResponce(inputText) {
             }, 2000);
             break;
         case "help":
-            sendTextMessage("<span class='sk'>Envía la <span class='bold'>'palabra'</span> correspondiente acerca de lo que quieras saber sobre mí 😇😊<br><br><span class='bold'>'about'</span> - más detalles sobre mí<br><span class='bold'>'experiencia'</span> - historial laboral<br><span class='bold'>'estudios'</span> - historial académico<br><span class='bold'>'reconocimientos'</span> - logros académicos y certificaciones<br><span class='bold'>'idiomas'</span> - lenguas que hablo<br><span class='bold'>'colaboraciones'</span> - contribuciones realizadas con entidades<br><span class='bold'>'cursos'</span> - Cursos/webinars a los que asistí<br><span class='bold'>'cv'</span> - descarga de mi CV<br><span class='bold'>'enlaces'</span> - documentos de interés<br><span class='bold'>'contacto'</span> - comunícate conmigo!! 😋<br><span class='bold'>'mensaje'</span> - deja un mensaje en mi libro de visitas<br><span class='bold'>'clear'</span> - vaciar la conversación<br>");
+            sendTextMessage("<span class='sk'>Envía la <span class='bold'>'palabra'</span> correspondiente acerca de lo que quieras saber sobre mí 😇😊<br><br><span class='bold'>'about'</span> - más detalles sobre mí<br><span class='bold'>'experiencia'</span> - historial laboral<br><span class='bold'>'estudios'</span> - historial académico<br><span class='bold'>'reconocimientos'</span> - logros académicos y certificaciones<br><span class='bold'>'idiomas'</span> - lenguas que hablo<br><span class='bold'>'colaboraciones'</span> - contribuciones realizadas con entidades<br><span class='bold'>'cursos'</span> - Cursos/webinars a los que asistí<br><span class='bold'>'cv'</span> - descarga de mi CV<br><span class='bold'>'enlaces'</span> - documentos de interés<br><span class='bold'>'contacto'</span> - comunícate conmigo!! 😋<br><span class='bold'>'clear'</span> - vaciar la conversación<br>");
             break;
         case "cv":
             sendTextMessage(resumeString);
@@ -86,28 +86,6 @@ function waitAndResponce(inputText) {
         case "estudios":
             sendTextMessage("<span class='bold'>💻 Grado en Ingeniería Informática</span><br>&nbsp;&nbsp&nbsp;&nbsp⭐ Mención en Tecnologías de la Información<br>&nbsp;&nbsp&nbsp;&nbsp📍 Universidad de A Coruña<br>&nbsp;&nbsp&nbsp;&nbsp⌛ 2016 - 2021<br><br>💻 <span class='bold'>Máster Inter-Universitario en Ciberseguridad</span><br>&nbsp;&nbsp&nbsp;&nbsp📍 Universidad de A Coruña<br>&nbsp;&nbsp&nbsp;&nbsp⌛ 2021- 2023<br>");
             break;
-
-        case "mensaje":
-            var nombre = "$";
-            var contacto = "$";
-            var mensaje = "$";
-            sendTextMessage("<span class='bold'>¿Cuál es tu nombre?</span>");
-            while (nombre !== "$"){
-                var nombre = "$";
-                var nombre2 = inputText
-                sendTextMessage("<span class='bold'>¿Podrías facilitarme algún método de contacto (teléfono, e-mail,...)?</span>");
-                while (contacto !== "$"){
-                    var contacto = "$";
-                    var contacto2 = inputText
-                    sendTextMessage("<span class='bold'>¿Qué mensaje quieres mandarme? 😁</span>");
-                    while (nombre !== "$"){     
-                        var mensaje = "$"
-                        var mensaje2 = inputText;
-                        sendTextMessage(nombre2);
-                    }
-                }
-            }
-             break;
 
         case "enlaces":
         sendTextMessage("<span class='bold'>💻 Trabajo Fin de Grado</span><br>&nbsp;&nbsp&nbsp;&nbsp 📄 “Desarrollo de una aplicación web para la gestión fuera de banda de un laboratorio de redes de datos”<br>&nbsp;&nbsp&nbsp;&nbsp⭐ <a class='alink' target='_blank' href='https:\/\/ruc.udc.es/dspace/handle/2183/28657 '><span class='bold'>Enlace</a><br><br><span class='bold'>💻 Trabajo Fin de Máster</span><br>&nbsp;&nbsp&nbsp;&nbsp 📄 “Desarrollo y estudio forense de un ransomware para dispositivos Android 8.1”<br>&nbsp;&nbsp&nbsp;&nbsp⭐ <span class='bold'><span class='alink'>Enlace pendiente...</span></a><br><br><span class='bold'>💻 Trabajo del Grado en Ingeniería Informática</span><br>&nbsp;&nbsp&nbsp;&nbsp 📄 “Gestión de usuarios y grupos en Windows 7 & Active Directory”<br>&nbsp;&nbsp&nbsp;&nbsp⭐ <a class='alink' target='_blank' href='https:\/\/www.dc.fi.udc.es/~afyanez/Docencia/2019/Grado/Trabajos/Win-Users.pdf '>  <span class='bold'>Enlace</a><br>");
