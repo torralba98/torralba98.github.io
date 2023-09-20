@@ -87,13 +87,16 @@ function waitAndResponce(inputText) {
             sendTextMessage("<span class='bold'>💻 Grado en Ingeniería Informática</span><br>&nbsp;&nbsp&nbsp;&nbsp⭐ Mención en Tecnologías de la Información<br>&nbsp;&nbsp&nbsp;&nbsp📍 Universidad de A Coruña<br>&nbsp;&nbsp&nbsp;&nbsp⌛ 2016 - 2021<br><br>💻 <span class='bold'>Máster Inter-Universitario en Ciberseguridad</span><br>&nbsp;&nbsp&nbsp;&nbsp📍 Universidad de A Coruña<br>&nbsp;&nbsp&nbsp;&nbsp⌛ 2021- 2023<br>");
             break;
 
-        case "enlaces":
+        case "mensaje":
             var nombre = "No especificado.";
             var contacto = "No especificado.";
             var mensaje = "No especificado.";
             sendTextMessage("<span class='bold'>¿Cuál es tu nombre?</span>");
-            
             var nombre = inputText;
+            sendTextMessage("<span class='bold'>¿Podrías facilitarme algún método de contacto (teléfono, e-mail,...)?</span>");
+            var contacto = inputText;
+            sendTextMessage("<span class='bold'>¿Qué mensaje quieres mandarme? 😁</span>");
+            var mensaje = inputText;
             sendTextMessage(nombre);
             break;
 
