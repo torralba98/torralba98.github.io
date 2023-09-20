@@ -92,7 +92,9 @@ function waitAndResponce(inputText) {
             var contacto = "No especificado.";
             var mensaje = "No especificado.";
             sendTextMessage("<span class='bold'>¿Cuál es tu nombre?</span>");
-            var nombre = inputText;
+            switch (inputText.toLowerCase().trim()) {
+                  var nombre = inputText;
+            }
             sendTextMessage("<span class='bold'>¿Podrías facilitarme algún método de contacto (teléfono, e-mail,...)?</span>");
             var contacto = inputText;
             sendTextMessage("<span class='bold'>¿Qué mensaje quieres mandarme? 😁</span>");
