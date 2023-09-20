@@ -1,5 +1,10 @@
 var audio = new Audio('assets/sentmessage.mp3');
 
+var sleepES5 = function(ms){
+    var esperarHasta = new Date().getTime() + ms;
+    while(new Date().getTime() < esperarHasta) continue;
+};
+
 var contactString = "<div class='social'>  <div class='socialItem' id='call'><img class='socialItemI' src='images/gmail.svg'/><label class='number'>atorralba@isdefe.es<br>a.torralba@udc.es</label></div> </a> <a href='mailto:atorralba@isdefe.es'>  </a> <a target='_blank' href='https://github.com/torralba98'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://instagram.com/torraalba'> <div class='socialItem'><img class='socialItemI' src='images/instagram.svg' alt=''> </div> </a> <a href='https://www.linkedin.com/in/alfonso-torralba/' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='images/linkedin.svg' alt=''></div> </a> </div>";
 
 var resumeString = "<img src='images/resumeThumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>CV_Alfonso_Torralba.pdf</label></div><a href='assets/CV_Alfonso_Torralba.pdf' download='CV_Alfonso_Torralba.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
@@ -92,21 +97,18 @@ function waitAndResponce(inputText) {
             var contacto = "No especificado.";
             var mensaje = "No especificado.";
             sendTextMessage("<span class='bold'>¿Cuál es tu nombre?</span>");
-            switch (inputText) {
-                  var nombre = inputText;
-                  sendTextMessage("<span class='bold'>¿Podrías facilitarme algún método de contacto (teléfono, e-mail,...)?</span>");
-                  switch (inputText) {
-                         var contacto = inputText;
-                         sendTextMessage("<span class='bold'>¿Qué mensaje quieres mandarme? 😁</span>");
-                         switch (inputText) {
-                                var mensaje = inputText;
-                                sendTextMessage(nombre);
-                         }
-                  }
-             }
+            sleepES5(5000);
+            var nombre = inputText;
+            sendTextMessage("<span class='bold'>¿Podrías facilitarme algún método de contacto (teléfono, e-mail,...)?</span>");
+            sleepES5(5000);
+            var contacto = inputText;
+            sendTextMessage("<span class='bold'>¿Qué mensaje quieres mandarme? 😁</span>");
+            sleepES5(5000);           
+            var mensaje = inputText;
+            sendTextMessage(nombre);
              break;
 
-        case "":
+        case "enlaces":
         sendTextMessage("<span class='bold'>💻 Trabajo Fin de Grado</span><br>&nbsp;&nbsp&nbsp;&nbsp 📄 “Desarrollo de una aplicación web para la gestión fuera de banda de un laboratorio de redes de datos”<br>&nbsp;&nbsp&nbsp;&nbsp⭐ <a class='alink' target='_blank' href='https:\/\/ruc.udc.es/dspace/handle/2183/28657 '><span class='bold'>Enlace</a><br><br><span class='bold'>💻 Trabajo Fin de Máster</span><br>&nbsp;&nbsp&nbsp;&nbsp 📄 “Desarrollo y estudio forense de un ransomware para dispositivos Android 8.1”<br>&nbsp;&nbsp&nbsp;&nbsp⭐ <span class='bold'><span class='alink'>Enlace pendiente...</span></a><br><br><span class='bold'>💻 Trabajo del Grado en Ingeniería Informática</span><br>&nbsp;&nbsp&nbsp;&nbsp 📄 “Gestión de usuarios y grupos en Windows 7 & Active Directory”<br>&nbsp;&nbsp&nbsp;&nbsp⭐ <a class='alink' target='_blank' href='https:\/\/www.dc.fi.udc.es/~afyanez/Docencia/2019/Grado/Trabajos/Win-Users.pdf '>  <span class='bold'>Enlace</a><br>");
         break;
 
