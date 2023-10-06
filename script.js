@@ -101,7 +101,7 @@ function waitAndResponce(inputText) {
 
 
         case "colaboraciones":
-            sendTextMessage("<span class='bold'>🖥️ Desarrollo de retos para el “Capture The Flag” de <a class='alink' target='_blank' href='https:\/\/ciberseguridadegalicia.gal/gl/cibergal'><span class='bold'>CIBER.gal</a> </span><br>&nbsp;&nbsp&nbsp;&nbsp⏩ Llevado a cabo durante mi estancia en Gradiant. Me encargué sobre todo de implementar los retos de esteganografía.<br><br> <span class='bold'>🖥️ Orador del VI Congreso XoveTIC 2023</span><br>&nbsp;&nbsp&nbsp;&nbsp⏩ En él se trataron diversas comunicaciones orales y pósters dentro del ámbito de las Tecnologías de la Información y las Comunicaciones (TIC). Para mi situación personal, di a conocer un artículo resumen acerca de mi Trabajo Fin de Máster.<br>");
+            sendTextMessage("<span class='bold'>🖥️ Desarrollo de retos para el “Capture The Flag” de <a class='alink' target='_blank' href='https:\/\/ciberseguridadegalicia.gal/gl/cibergal'><span class='bold'>CIBER.gal</a> </span><br>&nbsp;&nbsp&nbsp;&nbsp⏩ Llevado a cabo durante mi estancia en Gradiant. Me encargué sobre todo de implementar los retos de esteganografía.<br><br> <span class='bold'>🖥️ Ponente del VI Congreso XoveTIC 2023</span><br>&nbsp;&nbsp&nbsp;&nbsp⏩ En él se trataron diversas comunicaciones orales y pósters dentro del ámbito de las Tecnologías de la Información y las Comunicaciones (TIC). Para mi situación personal, di a conocer un artículo resumen acerca de mi Trabajo Fin de Máster.<br>");
             break;
 
         case "experiencia":
